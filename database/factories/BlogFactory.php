@@ -19,7 +19,7 @@ class BlogFactory extends Factory
     {
         return [
             'title' => $this->faker->word(),
-            'content' => $this->feker->realText()
+            'content' => $this->faker->realText()
         ];
     }
 }

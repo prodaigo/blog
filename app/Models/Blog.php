@@ -7,7 +7,8 @@ use Illuminate\Database\Eloquent\Model;
 
 class Blog extends Model
 {
-    // use HasFactory;
+    use HasFactory;
+    
     // テーブル名
     protected $table = 'blogs';
 
