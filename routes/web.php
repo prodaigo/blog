@@ -22,6 +22,10 @@ Route::get('/blog/create', '\App\Http\Controllers\BlogController@showCreate')->n
 // ブログ登録
 Route::post('/blog/store', '\App\Http\Controllers\BlogController@exeStore')->name('store');
 
-
 // ブログ詳細画面を表示
 Route::get('/blog/{id}', '\App\Http\Controllers\BlogController@showDetail')->name('show');
+
+// ブログ編集画面を表示
+Route::get('/blog/edit/{id}', '\App\Http\Controllers\BlogController@showEdit')->name('edit');
+Route::post('/blog/update', '\App\Http\Controllers\BlogController@exeUpdate')->name('update');
+
